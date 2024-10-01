@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Gaurav</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #283c86, #45a247);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin: 0;
+        background: linear-gradient(90deg, white, pink);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textGlow 1.5s ease-in-out infinite;
+      }
+
+      @keyframes textGlow {
+        0%,
+        100% {
+          text-shadow: 0 0 10px rgba(217, 167, 199, 0.7),
+            0 0 15px rgba(255, 252, 220, 0.7);
+        }
+        50% {
+          text-shadow: 0 0 15px rgba(217, 167, 199, 0.9),
+            0 0 20px rgba(255, 252, 220, 0.9);
+        }
+      }
+
+      @keyframes beat {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .wish-text {
+        font-size: 1.8rem;
+        margin: 0 20px;
+        margin-bottom: 30px;
+        color: #f1f1f1;
+
+        text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+      }
+
+      .scrolling-images {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        width: 90%;
+        max-width: 1000px;
+        padding: 10px 0;
+      }
+
+      .scroll-container {
+        display: flex;
+      }
+
+      .scrolling-images img {
+        width: 300px;
+        height: 300px;
+
+        margin: 0 10px;
+        border-radius: 20px;
+        transition: transform 1s ease-in-out;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .scrolling-images img:hover {
+        transform: rotate(20deg);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2rem;
+        }
+        .wish-text {
+          font-size: 1.4rem;
+        }
+        .scrolling-images img {
+          width: 300px;
+          height: auto;
+        }
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 1.8rem;
+        }
+        .wish-text {
+          font-size: 1.2rem;
+        }
+        .scrolling-images img {
+          height: auto;
+          width: 250px;
+        }
+      }
+      .heart {
+        font-size: 3rem;
+        color: red;
+        animation: beat 1s infinite;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Happy Birthday Gaurav Bhai</h1>
+    <span class="heart" style="color: red">❤️</span>
+    <p class="wish-text">
+      May all your dreams come true. Wishing you a day filled with love, joy,
+      and endless happiness!
+    </p>
+
+    <div class="scrolling-images">
+      <div class="scroll-container">
+        <marquee behaviour="scroll" direction="left" scrollAmount="11">
+          <img src="p1.jpg" alt="Image1" />
+          <img src="p2.jpg" alt="Image2" />
+          <img src="p3.jpg" alt="Image3" />
+          <img src="p4.jpg" alt="Image4" />
+          <img src="p10.jpg" alt="Image6" />
+          <img src="p11.jpg" alt="Image6" />
+          <img src="p12.jpg" alt="Image6" />
+          <img src="p5.jpg" alt="Image5" />
+          <img src="p6.jpg" alt="Image6" />
+          <img src="p7.jpg" alt="Image6" />
+          <img src="p8.jpg" alt="Image6" />
+          <img src="p9.jpg" alt="Image6" />
+        </marquee>
+      </div>
+    </div>
+  </body>
+</html>
